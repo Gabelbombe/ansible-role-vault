@@ -77,7 +77,7 @@
        mode: 0755
        seuser: system_u
        serole: object_r
-       setype: bin_t
+       setype: etc_t
        selevel: s0
 
    - name: SSL Folder
@@ -89,7 +89,7 @@
        mode: 0755
        seuser: system_u
        serole: object_r
-       setype: bin_t
+       setype: cert_t
        selevel: s0
 
 - name: Add the Vault Service
