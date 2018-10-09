@@ -1,14 +1,11 @@
 ---
 # tasks file for vault
-- name: Update all packages
-  package:
-   name: '*'
-   state: latest
-
-- name: Install EPEL
-  package:
-   name: "epel-release"
-   state: latest
+- name: Upgrade all packages to the latest version
+  apt:
+    name: "*"
+    state: latest
+    update_cache: yes
+    force_apt_get: true
 
 - name: Install Necessary Packages
   package:
